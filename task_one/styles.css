@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Fira Sans;
+    src: url("./public/fira-sans/FiraSans-Light.otf");
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.block{
+    width: 1440px;
+    display: flex;
+    background-color: #E3CFCF;
+}
+.text{
+    margin: 119px 104px 0 104px;
+    text-align: center;
+    position: relative;
+}
+.title{
+    font-family: Fira Sans;
+    font-weight: 275;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+}
+p{
+    font-family: Fira Sans;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 14px 0 24px 0;
+}
+.learn-more{
+    background-color: inherit;
+    border-width: 1px;
+    width: 170px;
+    height: 52px;
+    font-family: Fira Sans;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+.hidden{
+    color: transparent;
+}
+.active{
+    color: black;
+    transition: ease-in-out 700ms;
+}
+
+@media (max-width: 375px) {
+    body{
+        height: auto;
+        background-color: #E3CFCF;
+    }
+    .block{
+        flex-direction: column;
+    }
+    img{
+        width: 375px;
+        height: 300px;
+    }
+    .text{
+        margin: 62px 16px 0 16px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .learn-more{
+        width: 110px;
+        height: 48px;
+        font-size: 12px;
+    }
+
+}

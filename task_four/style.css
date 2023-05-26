@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Avenir;
+    src: url("./public/font/Avenir\ LT\ Std\ 35\ Light.otf");
+}
+
+@font-face {
+    font-family: Domaine;
+    src: url("./public/font/TestDomaineDisplayNarrow-Semibold.otf");
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+#root{
+    display: flex;
+    width: 1312px;
+    height: 280px;
+    justify-content: space-between;
+    text-align: center;
+    background: #F5F1EC;
+    padding: 64px 64px 0 64px;
+}
+.block{
+    width: 256px;
+}
+.title{
+    font-family: Domaine;
+    font-weight: 600;
+    font-size: 20px;
+}
+.text{
+    font-family: Avenir;
+    font-weight: 300;
+    font-size: 14px;
+}
+img{
+    
+}

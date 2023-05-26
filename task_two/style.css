@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Barlow_Condensed;
+    src: url("./public/Barlow_Condensed/BarlowCondensed-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url("./public/Rajdhani/Rajdhani-Regular.ttf");
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.block{
+    display: flex;
+    max-width: 1440px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+}
+.title{
+    font-family: Barlow_Condensed;
+    font-weight: 600;
+    font-size: 54px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.description{
+    font-family: Rajdhani;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 16px;
+}
+.all-recipes{
+    font-family: Barlow_Condensed;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 2px;
+}
+span{
+    display: block;
+    width: 128px;
+    height: 1px;
+    background-color: black;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    margin: 58px;
+    position: relative;
+}
+.profile{
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    z-index: 1;
+}
+.profile-title{
+    font-family: Barlow_Condensed;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.img-one{
+    position: absolute;
+    left: -37%;
+    top: -10%;
+}
+.img-two-first{
+    position: absolute;
+    left: -18%;
+    bottom: 15%;
+}
+.img-two-second{
+    position: absolute;
+    right: -12%;
+    top: -9%;
+}
+.img-three{
+    position: absolute;
+    right: -13%;
+    bottom: 16%;
+}
+
+@media (max-width: 375px) {
+    .container{
+        width: 375px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .description{
+        font-size: 20px;
+        width: 343px;
+    }
+    .all-recipes{
+        font-size: 18px;
+    }
+    span{
+        width: 115px;
+    }
+    .articles{
+        width: 304px;
+    }
+    .article{
+        margin: 0;
+        margin-top: 32px;
+    }
+    .profile{
+        width: 304px;
+        height: 304px;
+    }
+    .img-one{
+        width: 196px;
+        height: 159px;
+        left: -24%;
+        top: -7%;
+    }
+    .img-two-first{
+        width: 196px;
+        height: 159px;
+        left: -24%;
+        bottom: 12%;
+    }
+    .img-two-second{
+        width: 196px;
+        height: 159px;
+        top: -10%;
+    }
+    .img-three{
+        width: 196px;
+        height: 159px;
+        bottom: 10%;
+    }
+    .profile-title{
+        font-size: 24px;
+    }
+  }
